@@ -10,152 +10,157 @@
   <title>Jessica Medina | ECE & Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
 
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <span class="nav-logo">jm<span class="blink">_</span></span>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#connect">connect</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
   <header id="main-header">
-    <div class="header-inner">
-      <div class="header-tag">ECE Student · Developer · Builder</div>
-      <h1>Jessica<br><em>Medina</em></h1>
-      <p class="header-sub">
-        I build things that live on screens — from coding games for kids
-        to cloud-powered tools that make technology more human.
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-pre"><span class="bracket">[</span> ECE Student · Developer · Builder <span class="bracket">]</span></p>
+      <h1>Jessica<br /><em>Medina</em></h1>
+      <p class="hero-sub">
+        I craft interfaces and infrastructure — from block-based coding games
+        for kids to cloud pipelines that scale.
       </p>
-      <div class="header-links">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-pill">GitHub ↗</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-pill">LinkedIn ↗</a>
+      <div class="hero-chips">
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">AWS</span>
+        <span class="skill-chip">Node.js</span>
+        <span class="skill-chip">Docker</span>
+        <span class="skill-chip">Java</span>
+      </div>
+      <div class="hero-cta">
+        <a href="https://www.linkedin.com/in/jessica-medina232" target="_blank" rel="noopener noreferrer" class="btn-pill primary">LinkedIn ↗</a>
+        <a href="https://github.com/jessmed749" target="_blank" rel="noopener noreferrer" class="btn-pill">GitHub ↗</a>
       </div>
     </div>
-    <div class="header-deco" aria-hidden="true">
-      <span class="deco-circle c1"></span>
-      <span class="deco-circle c2"></span>
-      <span class="deco-circle c3"></span>
-    </div>
+    <div class="hero-orb" aria-hidden="true"></div>
   </header>
 
   <!-- ABOUT -->
-  <div class="section-card" id="about-section">
+  <div class="section-card" id="about">
     <div class="section-label">01 · About</div>
-    <div class="about-grid">
-      <div class="about-text">
-        <h2>Hi, I'm Jessica.</h2>
-        <p>
-          I'm an Electrical and Computer Engineering student passionate about
-          software engineering, AI, cloud technologies, and web development.
-          I enjoy building projects that sit at the intersection of creativity
-          and hard engineering problems.
-        </p>
-        <p>
-          When I'm not debugging code, you'll find me exploring new frameworks,
-          playing with ML experiments, or designing interfaces that feel intuitive
-          and delightful to use.
-        </p>
-        <div class="skills-row">
-          <span class="skill-chip">React</span>
-          <span class="skill-chip">Python</span>
-          <span class="skill-chip">AWS</span>
-          <span class="skill-chip">Node.js</span>
-          <span class="skill-chip">HTML/CSS</span>
-          <span class="skill-chip">Java</span>
-        </div>
-      </div>
-      <div class="about-image-wrap">
-        <img
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
-          alt="Students collaborating on laptops"
-        />
-      </div>
+    <h2>Hi, I'm Jessica.</h2>
+    <div class="about-body">
+      <p>
+        I'm an Electrical and Computer Engineering student passionate about
+        the full stack — from hardware-level thinking to pixel-perfect UIs.
+        I love working on projects that are technically interesting <em>and</em> actually useful.
+      </p>
+      <p>
+        Currently exploring AI tooling, DevOps infrastructure, and educational tech.
+        I believe the best software feels invisible — it just works, beautifully.
+      </p>
+    </div>
+    <div class="terminal-block">
+      <span class="t-prompt">~/jessica</span> <span class="t-cmd">cat skills.txt</span><br/>
+      <span class="t-out">→ Languages &nbsp;: Python · JavaScript · Java · C · HTML/CSS</span><br/>
+      <span class="t-out">→ Frameworks : React · Node.js · Express</span><br/>
+      <span class="t-out">→ Cloud/DevOps: AWS · Docker · Terraform · CI/CD</span><br/>
+      <span class="t-out">→ Interests &nbsp;: EdTech · Open Source · Systems Design</span>
     </div>
   </div>
 
   <!-- PROJECTS -->
-  <div class="section-card" id="projects-section">
+  <div class="section-card" id="projects">
     <div class="section-label">02 · Projects</div>
     <h2>What I've Built</h2>
-    <p class="section-intro">
-      A selection of projects I'm proud of — spanning education, tools, and cloud infrastructure.
-    </p>
+    <p class="section-intro">Real projects, real code — open source and on GitHub.</p>
 
     <div class="project-grid">
 
       <div class="project-card" id="project-robotcraft">
-        <div class="project-number">01</div>
-        <h3>Robot Craft</h3>
+        <div class="project-top">
+          <span class="project-num">01</span>
+          <a href="https://github.com/jessmed749/RobotCraft-GSoC-2024" target="_blank" rel="noopener noreferrer" class="project-ext">↗</a>
+        </div>
+        <h3>RobotCraft</h3>
         <p class="project-desc">
-          A block-based coding game designed to teach programming fundamentals
-          to elementary-school kids through drag-and-drop robot commands.
+          Google Summer of Code 2024 project. A block-based coding environment
+          that teaches robotics programming to kids through drag-and-drop commands
+          and simulated robot feedback.
         </p>
         <div class="project-tags">
+          <span class="tag">GSoC 2024</span>
           <span class="tag">JavaScript</span>
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">EdTech</span>
         </div>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project ↗</a>
+        <a href="https://github.com/jessmed749/RobotCraft-GSoC-2024" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub ↗</a>
       </div>
 
-      <div class="project-card" id="project-tiggermath">
-        <div class="project-number">02</div>
-        <h3>Tiggermath</h3>
-        <p class="project-desc">
-          An adaptive math app that adjusts difficulty in real time based on
-          student performance, designed to make math practice feel less like
-          a chore.
-        </p>
-        <div class="project-tags">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
+      <div class="project-card" id="project-facade">
+        <div class="project-top">
+          <span class="project-num">02</span>
+          <a href="https://github.com/jessmed749/Facade-Pipeline" target="_blank" rel="noopener noreferrer" class="project-ext">↗</a>
         </div>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project ↗</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-number">03</div>
-        <h3>Cloud DevOps Pipeline</h3>
+        <h3>Facade Pipeline</h3>
         <p class="project-desc">
-          Automated CI/CD pipeline built during my internship, cutting deployment
-          time by 40% through containerized microservices and infrastructure as code.
+          An automated CI/CD pipeline with containerized microservices
+          and infrastructure as code, designed to streamline deployment
+          workflows and reduce release friction.
         </p>
         <div class="project-tags">
           <span class="tag">AWS</span>
           <span class="tag">Docker</span>
           <span class="tag">Terraform</span>
+          <span class="tag">DevOps</span>
         </div>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project ↗</a>
+        <a href="https://github.com/jessmed749/Facade-Pipeline" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub ↗</a>
       </div>
 
     </div>
   </div>
 
-  <!-- LINKS / CONTACT -->
-  <div class="section-card" id="links-section">
+  <!-- CONNECT -->
+  <div class="section-card" id="connect">
     <div class="section-label">03 · Connect</div>
     <h2>Let's Talk</h2>
-    <p class="section-intro">
-      Always open to interesting conversations, internship opportunities, or
-      collaborations on cool side projects.
-    </p>
+    <p class="section-intro">Open to internships, collabs, and interesting conversations.</p>
     <div class="connect-row">
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="connect-card">
+      <a href="https://www.linkedin.com/in/jessica-medina232" target="_blank" rel="noopener noreferrer" class="connect-card">
         <span class="connect-icon">in</span>
-        <span>LinkedIn</span>
+        <div>
+          <div class="connect-label">LinkedIn</div>
+          <div class="connect-sub">jessica-medina232</div>
+        </div>
       </a>
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="connect-card">
+      <a href="https://github.com/jessmed749" target="_blank" rel="noopener noreferrer" class="connect-card">
         <span class="connect-icon">gh</span>
-        <span>GitHub</span>
+        <div>
+          <div class="connect-label">GitHub</div>
+          <div class="connect-sub">jessmed749</div>
+        </div>
       </a>
       <a href="mailto:jessica@example.com" class="connect-card">
         <span class="connect-icon">@</span>
-        <span>Email Me</span>
+        <div>
+          <div class="connect-label">Email</div>
+          <div class="connect-sub">Say hello</div>
+        </div>
       </a>
     </div>
   </div>
 
   <footer>
-    <p class="footer-text">© 2026 Jessica Medina — built with HTML & CSS</p>
+    <p class="footer-text">© 2026 Jessica Medina &nbsp;·&nbsp; ECE @ UT Austin &nbsp;·&nbsp; built with HTML &amp; CSS</p>
   </footer>
 
 </body>

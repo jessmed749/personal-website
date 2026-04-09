@@ -5,63 +5,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Jessica Medina's personal website showcasing her background in Electrical and Computer Engineering, software projects, and interests."
+    content="Jessica Medina — ECE student and software developer building creative apps, coding games, and cloud tools. Explore her projects and connect."
   />
-  <title>Jessica Medina | Personal Website</title>
+  <title>Jessica Medina | ECE & Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
+
+  <!-- HERO -->
   <header id="main-header">
-    <h1>Jessica Medina</h1>
-    <p>ECE Student | Software Developer | Builder</p>
+    <div class="header-inner">
+      <div class="header-tag">ECE Student · Developer · Builder</div>
+      <h1>Jessica<br><em>Medina</em></h1>
+      <p class="header-sub">
+        I build things that live on screens — from coding games for kids
+        to cloud-powered tools that make technology more human.
+      </p>
+      <div class="header-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-pill">GitHub ↗</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-pill">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="header-deco" aria-hidden="true">
+      <span class="deco-circle c1"></span>
+      <span class="deco-circle c2"></span>
+      <span class="deco-circle c3"></span>
+    </div>
   </header>
 
-  <div class="section-card">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm Jessica Medina, an Electrical and Computer Engineering student
-      interested in software engineering, AI, cloud technologies, and web development.
-      I enjoy building projects that combine creativity and problem-solving.
-    </p>
-    <img
-      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-      alt="Students working together on laptops"
-      width="400"
-    />
+  <!-- ABOUT -->
+  <div class="section-card" id="about-section">
+    <div class="section-label">01 · About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Hi, I'm Jessica.</h2>
+        <p>
+          I'm an Electrical and Computer Engineering student passionate about
+          software engineering, AI, cloud technologies, and web development.
+          I enjoy building projects that sit at the intersection of creativity
+          and hard engineering problems.
+        </p>
+        <p>
+          When I'm not debugging code, you'll find me exploring new frameworks,
+          playing with ML experiments, or designing interfaces that feel intuitive
+          and delightful to use.
+        </p>
+        <div class="skills-row">
+          <span class="skill-chip">React</span>
+          <span class="skill-chip">Python</span>
+          <span class="skill-chip">AWS</span>
+          <span class="skill-chip">Node.js</span>
+          <span class="skill-chip">HTML/CSS</span>
+          <span class="skill-chip">Java</span>
+        </div>
+      </div>
+      <div class="about-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
+          alt="Students collaborating on laptops"
+        />
+      </div>
+    </div>
   </div>
 
-  <div class="section-card">
-    <h2>Projects</h2>
-    <p>
-      Some of my favorite work includes educational apps, coding games, and software tools
-      that make technology more useful and accessible.
+  <!-- PROJECTS -->
+  <div class="section-card" id="projects-section">
+    <div class="section-label">02 · Projects</div>
+    <h2>What I've Built</h2>
+    <p class="section-intro">
+      A selection of projects I'm proud of — spanning education, tools, and cloud infrastructure.
     </p>
-    <ul>
-      <li>Robot Craft – a coding game for kids</li>
-      <li>Tiggermath – an educational math app</li>
-      <li>Cloud and DevOps internship projects</li>
-    </ul>
+
+    <div class="project-grid">
+
+      <div class="project-card" id="project-robotcraft">
+        <div class="project-number">01</div>
+        <h3>Robot Craft</h3>
+        <p class="project-desc">
+          A block-based coding game designed to teach programming fundamentals
+          to elementary-school kids through drag-and-drop robot commands.
+        </p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project ↗</a>
+      </div>
+
+      <div class="project-card" id="project-tiggermath">
+        <div class="project-number">02</div>
+        <h3>Tiggermath</h3>
+        <p class="project-desc">
+          An adaptive math app that adjusts difficulty in real time based on
+          student performance, designed to make math practice feel less like
+          a chore.
+        </p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <h3>Cloud DevOps Pipeline</h3>
+        <p class="project-desc">
+          Automated CI/CD pipeline built during my internship, cutting deployment
+          time by 40% through containerized microservices and infrastructure as code.
+        </p>
+        <div class="project-tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Terraform</span>
+        </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project ↗</a>
+      </div>
+
+    </div>
   </div>
 
+  <!-- LINKS / CONTACT -->
   <div class="section-card" id="links-section">
-    <h2>Links</h2>
-    <p>
-      Visit my favorite professional site:
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-        LinkedIn
-      </a>
+    <div class="section-label">03 · Connect</div>
+    <h2>Let's Talk</h2>
+    <p class="section-intro">
+      Always open to interesting conversations, internship opportunities, or
+      collaborations on cool side projects.
     </p>
-    <p>
-      You can also explore
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-        GitHub
+    <div class="connect-row">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="connect-card">
+        <span class="connect-icon">in</span>
+        <span>LinkedIn</span>
       </a>
-      to see coding projects and repositories.
-    </p>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="connect-card">
+        <span class="connect-icon">gh</span>
+        <span>GitHub</span>
+      </a>
+      <a href="mailto:jessica@example.com" class="connect-card">
+        <span class="connect-icon">@</span>
+        <span>Email Me</span>
+      </a>
+    </div>
   </div>
 
   <footer>
-    <p class="footer-text">© 2026 Jessica Medina</p>
+    <p class="footer-text">© 2026 Jessica Medina — built with HTML & CSS</p>
   </footer>
+
 </body>
 </html>
